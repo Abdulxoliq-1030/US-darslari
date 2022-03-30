@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Z-index and Overflow</title>
+    <style>
+
+
+        /* z-index
+         .box-1{
+            height: 200px;
+            background-color: brown;
+            z-index: -2;
+        }
+        .box-2 {
+            position: relative;
+            top: -100px;
+            z-index: 1;
+            height: 100px;
+            background-color: burlywood;
+        } */
+
+
+        .box-1 {
+            background-color: chartreuse;
+            border: 1px solid black;
+            width: 200px;
+            height: 50px;
+            overflow: visible;
+        }
+
+        
+        .box-2 {
+            float: right;
+            background-color:  cornflowerblue;
+            border: 1px solid black;
+            width: 200px;
+            height: 50px;
+            overflow: hidden;
+        }
+
+        .box-3 {
+            margin-top: 500px;
+            background-color:  coral;
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            overflow: scroll;
+        }
+
+        .box-4 {
+            margin-top: 100px;
+            background-color:  coral;
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            overflow: auto;
+        }
+
+        .box-5 {
+            margin-top: 100px;
+            background-color:  coral;
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            overflow-x: scroll;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <!-- Z-index 
+    <div class="box-1">Box 1</div>
+    <div class="box-2">Box 2</div>
+    -->
+
+
+
+    <!-- Z-indexning -> vazifasi ustma ust tushib qolgan elementlarni ketma ketligini aniqlab beradi.
+     Kattaroq z-indexga ega bolgan element  kichikrog'iga qaraganda oldinda joylashadi. Z-index har doim joylashtirilgan (positioned) elementlarga aytiladi -->
+
+
+    <div class="box-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum veniam et in voluptate nulla tempora consequuntur esse saepe, nostrum eos quia architecto, soluta labore voluptatum assumenda earum magnam voluptates debitis ab accusantium expedita possimus, iste perspiciatis quasi! Commodi minima numquam voluptatem ipsa provident fugit illo itaque? Impedit tempore fugit, animi cum laboriosam possimus, saepe deserunt beatae, distinctio mollitia autem veritatis dolorum esse nulla temporibus iure ducimus. At ducimus nobis optio assumenda aut vitae nostrum voluptatum est minima cupiditate perferendis laudantium consequuntur saepe quas rerum quam, dolore soluta fugiat error minus fuga nam impedit eligendi! Dignissimos voluptates culpa iste odio eos?</div>
+
+
+    
+    <div class="box-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum veniam et in voluptate nulla tempora consequuntur esse saepe, nostrum eos quia architecto, soluta labore voluptatum assumenda earum magnam voluptates debitis ab accusantium expedita possimus, iste perspiciatis quasi! Commodi minima numquam voluptatem ipsa provident fugit illo itaque? Impedit tempore fugit, animi cum laboriosam possimus, saepe deserunt beatae, distinctio mollitia autem veritatis dolorum esse nulla temporibus iure ducimus. At ducimus nobis optio assumenda aut vitae nostrum voluptatum est minima cupiditate perferendis laudantium consequuntur saepe quas rerum quam, dolore soluta fugiat error minus fuga nam impedit eligendi! Dignissimos voluptates culpa iste odio eos?</div>
+
+
+        
+    <div class="box-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum veniam et in voluptate nulla tempora consequuntur esse saepe, nostrum eos quia architecto, soluta labore voluptatum assumenda earum magnam voluptates debitis ab accusantium expedita possimus, iste perspiciatis quasi! Commodi minima numquam voluptatem ipsa provident fugit illo itaque? Impedit tempore fugit, animi cum laboriosam possimus, saepe deserunt beatae, distinctio mollitia autem veritatis dolorum esse nulla temporibus iure ducimus. At ducimus nobis optio assumenda aut vitae nostrum voluptatum est minima cupiditate perferendis laudantium consequuntur saepe quas rerum quam, dolore soluta fugiat error minus fuga nam impedit eligendi! Dignissimos voluptates culpa iste odio eos?</div>
+
+
+    <!-- Auto qanday vazifani bajaradi -> bunda scrollga o'xshab matn kop bolib ketsa bu ham scroll qoshib beradi lekin matn kamroq bolsa scrollni olib tashlaydi -->
+    <div class="box-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum veniam et in voluptate nulla tempora consequuntur esse saepe, nostrum eos quia architecto, soluta labore voluptatum assumenda earum magnam voluptates debitis ab accusantium expedita possimus, iste perspiciatis quasi! Commodi minima numquam voluptatem ipsa provident fugit illo itaque? Impedit tempore fugit, animi cum laboriosam possimus, saepe deserunt beatae, distinctio mollitia autem veritatis dolorum esse nulla temporibus iure ducimus. At ducimus nobis optio assumenda aut vitae nostrum voluptatum est minima cupiditate perferendis laudantium consequuntur saepe quas rerum quam, dolore soluta fugiat error minus fuga nam impedit eligendi! Dignissimos voluptates culpa iste odio eos?</div>
+
+    <div class="box-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum veniam et in voluptate nulla tempora consequuntur esse saepe, nostrum eos quia architecto, soluta labore voluptatum assumenda earum magnam voluptates debitis ab accusantium expedita possimus, iste perspiciatis quasi! Commodi minima numquam voluptatem ipsa provident fugit illo itaque? Impedit tempore fugit, animi cum laboriosam possimus, saepe deserunt beatae, distinctio mollitia autem veritatis dolorum deserunt beatae, distinctio mollitia autem veritatis dolorum assumenda aut vitae nostrum voluptatum est minima cupiditate perferendis laudantium consequuntur saepe quas rerum quam, dolore soluta fugiat error minus fuga nam impedit eligendi! Dignissimos voluptates culpa iste odio eos?</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+
+
+/* Rasmlarga style berish uchun kod */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense;
+}
+
+img {
+    width: 300px;
+}
+
+.horizontal {
+    grid-column: span 2;
+}
+
+.vertical {
+    grid-column: span 2;
+}
+
+.big {
+    grid-columns: span 2;
+    grid-rows: span 2;
+}

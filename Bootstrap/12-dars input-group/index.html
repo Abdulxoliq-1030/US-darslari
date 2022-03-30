@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input group</title>
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+
+    <!-- Input group yaratish -->
+    <div class="container">
+        <div class="mt-3">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username uchun input">
+                <span class="input-group-text" id="email-addon">@example.com</span>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- input group uchun sizing yaratib olish -->
+    <div class="container">
+        <h1>O'lcham berish</h1>
+        <div class="mt-3">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="input-group-sizing-sm">Kichik (small)</span>
+                <input type="text" class="form-control" aria-label="Sizing uchun misol">
+            </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="input-group-sizing-default">Default</span>
+                    <input type="text" class="form-control" aria-label="Sizing uchun misol" id="">
+                </div>
+
+                <div class="input-group input-group-lg">
+                    <span class="input-group-text" id="input-group-sizing-lg">Katta (large)</span>
+                    <input type="text" class="form-control" aria-label="Sizing uchun misol" id="">
+                </div>
+        </div>
+    </div>
+
+
+
+    <!-- Multiple qo'shimchalar -->
+
+    <div class="container">
+        <div class="mt-3">
+            <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <span class="input-group-text">0.00</span>
+                <input type="text" class="form-control" aria-label="Dollar korinishidagi input" id="">
+            </div>
+
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="Dollar ko'rinishidagi input" id="">
+                <span class="input-group-text">$</span>
+                <span class="input-group-text">0.00</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Button qo'shimchalar -->
+    <div class="container">
+        <h1>Buttonlarga addons berish</h1>
+        <div class="mt-3">
+            <div class="input-group mb-3">
+                <button class="btn btn-outline-secondary" type="button" id="example-button">Button 1</button>
+                <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addons1">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addons2">
+                <button class="btn btn-outline-secondary">Search</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Fayl yuklash uchun msiollar -->
+    <div class="container">
+        <h1>File berish uchun misollar</h1>
+        <div class="mt-3">
+            <div class="input-group">
+                <input type="file" class="form-control" id="input-group-file">
+                <label class="input-group-text" for="input-group-file">Yuklash</label>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Segmentlar uchun button yaratish -->
+  <div class="container">
+      <div class="mt-3">
+          <h1>Segmentlar uchun button</h1>
+        <div class="input-group mb-3">
+            <button type="button" class="btn btn-outline-secondary">Action</button>
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+          </div>
+          
+          <div class="input-group">
+            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+            <button type="button" class="btn btn-outline-secondary">Action</button>
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+      </div>
+  </div>
+
+    
+
+  <!-- Multiple input ism familiya uchun -->
+
+  <div class="container">
+      <div class="mt-5">
+          <div class="input-group">
+              <span class="input-group-text">First and last name</span>
+              <input type="text" class="form-control" aria-label="first-name">
+              <input type="text" class="form-control" aria-label="last-name">
+          </div>
+      </div>
+  </div>
+
+
+
+
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

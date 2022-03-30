@@ -1,0 +1,36 @@
+
+/* Animation name va animation duration haqida misollar */
+@keyframes box-mover {
+    0% {
+        left: 0;
+        background-color: red;
+        width: 200px;
+    }
+
+
+    50% {
+        left: 200px;
+        background-color: yellow;
+        width: 500px;
+    }
+
+    100% {
+        left: 500px;
+        background-color: green;
+        width: 400px;
+    }
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: red;
+    color: #fff;
+    animation-name: box-mover;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+}
+
+

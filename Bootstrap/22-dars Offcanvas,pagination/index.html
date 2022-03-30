@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offcanvas pagination</title>
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Tugmalar yordamida offcanvasni ishlatish -->
+    <div class="container mt-5">
+        <h3>tugmalar yordamida offcanvasni ishlatish</h3>
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Link with href
+          </a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            Button with data-bs-target
+          </button>
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+
+    <!-- Offcanvas default ozi chapdan chiqadi -->
+    
+    
+    
+    
+    <!-- Offcanvasni tepadan chiqarish -->
+    <div class="container">
+        <div class="mt-5">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Tepadan chiqarish offcanvas</button>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasTopLabel">Offcanvas tepadan chiqishi</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                ...
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Offcanvasni o'ngdan chiqarish -->
+    <div class="container">
+        <div class="mt-5">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">O'ngdan chiqarish offcanvas</button>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+       <div class="offcanvas-header">
+         <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
+        </div>
+    </div>
+
+
+    <!-- Offcanvasni pastdan chiqarish -->
+    <div class="container">
+        <div class="mt-5">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Pastdan chiqarish offcanvas</button>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    ...
+  </div>
+</div>
+        </div>
+    </div>
+
+
+    <!-- Offcanvasni backdrop qilib ishlatish -->
+    <div class="container">
+        <div class="mt-5">
+            <h3>Backdrop qilib ishlatish</h3>
+                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
+     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Enable backdrop (default)</button>
+     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
+     
+     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+       <div class="offcanvas-header">
+         <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5>
+         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+       </div>
+       <div class="offcanvas-body">
+         <p>Try scrolling the rest of the page to see this option in action.</p>
+       </div>
+     </div>
+     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+       <div class="offcanvas-header">
+         <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
+         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+       </div>
+       <div class="offcanvas-body">
+         <p>.....</p>
+       </div>
+     </div>
+     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+       <div class="offcanvas-header">
+         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+       </div>
+       <div class="offcanvas-body">
+         <p>Try scrolling the rest of the page to see this option in action.</p>
+       </div>
+     </div>
+             </div>
+     </div>
+     
+
+
+
+
+     <!-- Pagination componenti -->
+     <div class="container">
+         <div class="mt-5">
+             <h3>Pagination yaratish</h3>
+             <nav aria-label="Page navigation example">
+                 <ul class="pagination">
+                     <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                     <li class="page-item"><a href="#" class="page-link">1</a></li>
+                     <li class="page-item"><a href="#" class="page-link">2</a></li>
+                     <li class="page-item"><a href="#" class="page-link">3</a></li>
+                     <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                 </ul>
+             </nav>
+         </div>
+     </div>
+
+
+
+     <!-- Disabled ko'rinishidagi pagination -->
+     <div class="container">
+         <div class="mt-5">
+             <h3>Disabled korinishidagi pagination</h3>
+             <nav aria-label="...">
+                 <ul class="pagination">
+                     <li class="page-item disabled">
+                         <a href="#" class="page-link" tabindex="-1" aria-disabled="true">Previous</a>
+                     </li>
+                     <li class="page-item">
+                         <a href="#" class="page-link">1</a>
+                     </li>
+                     <li class="page-item active" aria-current="page">
+                         <a href="#" class="page-link">2</a>
+                     </li>
+                     <li class="page-item">
+                         <a href="#" class="page-link">3</a>
+                     </li>
+                     <li class="page-item">
+                         <a href="#" class="page-link">Next</a>
+                     </li>
+                 </ul>
+             </nav>
+         </div>
+     </div>
+
+
+
+     <!-- Paginationga o'lcham berish  -->
+
+
+     <!-- 1 -> katta pagination -->
+     <div class="container">
+         <div class="mt-5">
+             <h3>Pagination katta o'lchamdagisi</h3>
+             <nav aria-label="...">
+                 <ul class="pagination pagination-lg">
+                     <li class="page-item active" aria-current="page">
+                         <span class="page-link">1</span>
+                     </li>
+                     <li class="page-item">
+                         <a href="#" class="page-link">2</a>
+                     </li>
+                     <li class="page-item">
+                         <a href="#" class="page-link">3</a>
+                     </li>
+                 </ul>
+             </nav>
+         </div>
+     </div>
+
+
+
+     <!-- 2 -> kichik pagination -->
+     <div class="container">
+        <div class="mt-5">
+            <h3>Pagination kichik o'lchamdagisi</h3>
+            <nav aria-label="...">
+                <ul class="pagination pagination-sm">
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Pagination joylashishi -->
+
+
+
+    <!-- O'rtaga joylashishi -->
+    <div class="container">
+        <div class="mt-5">
+            <h3>Paginationni o'rtaga joylashtirish</h3>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+
+
+
+    <!-- O'ng tomonga joylashtirish -->
+    <div class="container">
+        <div class="mt-5">
+            <div class="container">
+                <div class="mt-5">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <h3>Paginationni o'ng tomonga joylashtirish</h3>
+                          <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+         <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>

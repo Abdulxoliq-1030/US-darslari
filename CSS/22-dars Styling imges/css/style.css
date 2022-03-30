@@ -1,0 +1,28 @@
+.rounded-image {
+    height: 300px;
+    border-radius: 24px;
+}
+
+
+.circle-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+
+}
+
+.thumbnail-image {
+    border: 1px solid #ccc;
+    height: 300px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.opacity-image {
+    opacity: .5;
+}
+
+.opacity-image:hover {
+    opacity: 1;
+    transition: .9s ease;
+}

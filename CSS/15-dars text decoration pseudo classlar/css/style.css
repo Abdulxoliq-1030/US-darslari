@@ -1,0 +1,46 @@
+
+/* Text decoration */
+.heading-1 {
+    text-decoration: underline;
+}
+
+
+.heading-2 {
+    text-decoration: line-through;
+}
+
+.heading-3 {
+    text-decoration: none;
+}
+
+/* /Text decoration */
+
+
+
+/* Text hover */
+.heading-1:hover {
+    background-color: brown;
+    color: #fff;
+}
+
+/* /Text hover */
+
+
+/* Text active */
+.heading-2:active{
+    background-color: green;
+    color: yellow;
+}
+
+/* /Text active */
+
+
+/* Grouping roules */
+.heading-2,.heading-3 {
+    background-color: teal;
+    color: #fff;
+    transition: 0.7s;
+}
+
+
+/* /Grouping roules */

@@ -1,0 +1,64 @@
+body{
+    font-family: sans-serif;
+}
+
+
+/* flex-directionga misollar */
+.flex-container {
+    display: flex;
+    padding: 20px;
+    background-color: #025955;
+    border-radius: 10px;
+    flex-direction: row;
+}
+
+.flex-item {
+    padding: 60px 15px;
+    background-color: #fde8cd;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+/* Flex-wrapga misollar */
+.flex-containerr {
+    margin-top: 30px;
+    display: flex;
+    padding: 20px;
+    background-color: pink;
+    border-radius: 10px;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+}
+
+.flex-items {
+    padding: 60px 15px;
+    background-color: #fde8cd;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+/* Justify content uchun misollar */
+
+.flex-containerrr {
+    display: flex;
+    padding: 20px;
+    background-color: #025955;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flex-item-1 {
+    padding: 60px 15px;
+    background-color: #fde8cd;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+}

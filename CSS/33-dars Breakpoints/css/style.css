@@ -1,0 +1,31 @@
+h1 {
+    font-size: 0.8rem;
+}
+
+/* Kichik devayslar (mobil telefonlar (landscape), 576pxdan yuqorisi) */
+@media only  screen and (min-width: 576px) {
+    h1 {
+        font-size: 1rem;
+    }
+}
+
+/* O'rta devayslar (planshetlar, 768pxdan yuqorisi) */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Katta devayslar (noutbuklar,992pxdan yuqorisi) */
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Kattaroq devayslar (katta o'lchamga ega monitorlar, 1200pxdan yuqorisi  */
+@media only screen and (min-width:1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+}

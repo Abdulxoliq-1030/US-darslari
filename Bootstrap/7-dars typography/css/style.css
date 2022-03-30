@@ -1,0 +1,13 @@
+span {
+    color: coral;
+}
+
+.banner-title {
+    margin-top: 5rem;
+}
+
+.banner-title .size {
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+}

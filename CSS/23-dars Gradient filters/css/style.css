@@ -1,0 +1,56 @@
+/* Gradients */
+.gradient-box-1 {
+    margin-top: 50px;
+    width: 600px;
+    height: 800px;
+    background-image: linear-gradient(to left bottom,yellow, red,blue);
+
+}
+
+.gradient-box-2 {
+    margin-top: 50px;
+    width: 600px;
+    height: 800px;
+    background-image: linear-gradient(to left bottom,green, red,blue);
+
+}
+
+
+.radial-gradient-box {
+    margin-top: 50px;
+    width: 600px;
+    height: 800px;
+    background-image: radial-gradient( circle,red,yellow,blue);
+}
+
+/* /Gradients */
+
+/* Filters */
+
+.blur {
+    filter: blur(5px);
+}
+
+.brightness {
+    filter: brightness(0.3);
+}
+
+.contrast-image {
+    filter: contrast(0.5);
+}
+
+.grayscale-image {
+    filter: grayscale(1);
+}
+
+.hue-rotate {
+    filter: hue-rotate(100deg);
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.opacity {
+    filter: opacity(50%);
+}

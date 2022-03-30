@@ -1,0 +1,121 @@
+
+/* text-align */
+ .heading-1 {
+    text-align: left;
+    background-color: aqua;
+}
+.heading-2 {
+    text-align: center;
+    background-color: aquamarine;
+}
+.heading-3 {
+    text-align: right;
+    background-color: cadetblue;
+}
+/* /Text-align */
+
+
+/* Vertical-align */
+.container {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.container span {
+    display: inline-block;
+    vertical-align:  middle;
+     
+}
+
+.box-1 {
+    width: 100px;
+    height: 150px;
+    background-color: blue;
+}
+.box-2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.box-3 {
+    width: 100px;
+    height: 50px;
+    background-color: yellow;
+}
+
+/* /Vertical-align */
+
+
+
+/* Float */
+.box-4 {
+    width: 100px;
+    height: 200px;
+    background-color: red;
+    float: left;
+}
+
+.box-5 {
+    width: 100px;
+    height: 200px;
+    background-color: blue;
+    float: right;
+}
+
+/* /Float */
+
+
+/* Vrtical align */
+.vertical-align {
+    margin-top: 300px;
+   
+    border: 1px solid black;
+}
+
+
+.vertical-align  span {
+display: inline-block;
+vertical-align: middle;
+}
+
+.boxx-1 {
+    width: 100px;
+    height: 150px;
+    background-color: cornsilk;
+
+}
+
+
+.boxx-2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+
+}
+
+
+.boxx-3 {
+    width: 100px;
+    height: 50px;
+    background-color: chocolate;
+
+}
+
+
+.quti-1 {
+    padding: 100px;
+    margin: 10px;
+    background-color: blueviolet;
+    float: left;
+}
+
+
+.quti-2 {
+    padding: 100px;
+    background-color: brown;
+    margin: 10px;
+    float: right;
+}
+
+

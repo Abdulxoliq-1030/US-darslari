@@ -1,0 +1,50 @@
+@import "./global";
+
+$globalColor: crimson;
+$textColor: #444;
+$btnColor: yellow;
+
+@mixin btn($content, $fontWeight) {
+  background-color: $btnColor;
+  padding: 8px 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: $fontWeight;
+  transition: opacity 0.5s ease;
+  &:hover {
+    opacity: 0.7;
+  }
+  &::after {
+    content: $content;
+  }
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: $globalColor;
+
+    h1 {
+      color: $textColor;
+      &::after {
+        content: " Brand";
+      }
+    }
+
+    button {
+      @include btn("Hello", bold);
+    }
+  }
+}
+
+button {
+  @include btn("Bye", 100);
+}

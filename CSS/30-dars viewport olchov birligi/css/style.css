@@ -1,0 +1,43 @@
+.box {
+    height: 200px;
+    width: 50vw;
+    background-color: green;
+    padding: 5vw;
+}
+
+.parent-box {
+    margin-top: 5rem;
+    width: 50%;
+    background-color: red;
+    height: 200px;
+}
+
+.box-2 {
+    width: 100vw;
+    background-color: yellow;
+    height: 150px;
+}
+
+.box-3 {
+    height: 50vh;
+    width: 70vw;
+    background-color: violet;
+}
+
+.box-4 {
+    height: 100vh;
+    width: 100vw;
+    background-color: wheat;
+}
+
+.box-5 {
+    height: 100px;
+    width: 50vmin;
+    background-color: cornflowerblue;
+}
+
+.box-6 {
+    height: 100px;
+    width: 50vmax;
+    background-color: red;
+}

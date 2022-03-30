@@ -1,0 +1,38 @@
+/* Important orqali target qilib olish */
+/* .nav-link {
+    color: coral!important;
+} */
+
+/* Specifity qoidasiga amal qilgan holatda bajarildi */
+
+/* .navbar-light .navbar-nav .nav-link {
+    color: indianred;
+}
+
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: lawngreen;
+} */
+
+
+/* Bootstrap elementlaridagi stillarni ozimiz bergan stylelarga otkazish */
+.btn {
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: coral;
+    color: #fff;
+}
+
+
+.btn-primary:hover {
+    background-color: yellow;
+    border-color: green;
+    color: black;
+}
+
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    background-color: hotpink;
+}

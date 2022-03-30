@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacing,Text</title>
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Spacing -> buning vazifasi elementning ko'rinishini o'zgartirish uchun margin va padding qo'shuvchi maxsus classlar to'plami -->
+
+    <!-- Bootstrapda elementga 0.25rem dan 3rem gacha bo'lgan margin va padding berish mumkin bolgan maxsus classlar mavjud. bu hossalarni barcha toomonlarga alohida berishning ham iloji bor -->
+    <div class="mt-2 bg-info">Elementga margin-top berish</div>
+    <div class=" mt-1 ms-4 bg-info">Elementga margin-left berish</div>
+    <div class=" mt-1 mx-2 bg-info">Elementga margin-left va margin-right berish</div>
+    <div class=" mt-1 p-2 bg-info">Elementing har tomoniga padding berish</div>
+    <div class=" mt-1 py-4 bg-info">Elementga padding-top va padding-bottom berish</div>
+    <div class=" mt-1 p-0 bg-info">Elementdan paddingni olib tashlash</div>
+    <div class=" mt-1 px-lg-5 bg-info">Elementga lg va undan katta bolgan holatlarda padding berish</div>
+
+
+
+
+
+<!-- Text utilities -> bu text bilan ishlash uchun maxsus classlar to'plami hisoblanadi -->
+
+<h3 class="mt-5">Text utilitalar</h3>
+
+<p class="text-start">Start aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-end">End aligned text on all viewport sizes.</p>
+
+<p class="text-sm-end">Start aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-end">Start aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-end">Start aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-end">Start aligned text on viewports sized XL (extra-large) or wider.</p>
+
+
+
+
+<!-- Matnni o'rash (wrapping) uni toshib chiqishi (overflow) -->
+<!-- Text wrap bu matnimizni ozini kontentdidan toshib chiqmasligini taminlab beradi -->
+<!-- Text nowrap esa bu matnimizni kontentidan toshib chiqaradi  -->
+<div class="badge bg-primary text-wrap" style="width: 6rem;">
+ This text should wrap
+</div>
+
+
+
+
+<!-- Word-wrap buning vazifasi matnimiz uzun bolib ekranga sig'may qolganda ozini ozgartiradi va ichidagi textlar pastki qatordan joylashib boradi -->
+<p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+
+
+
+
+
+
+
+<!-- Matnni o'zgartrish uchun classlar -->
+<h3>Matnni o'zgartirish</h3>
+<p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">CapiTaliZed text.</p>
+
+
+
+<!-- Matn o'lchovini classlar yordamida o'zgartirish -->
+<h3>Matn o'lchovini classlar yordamida ko'rsatish</h3>
+<p class="fs-1">.fs-1 text</p>
+<p class="fs-2">.fs-2 text</p>
+<p class="fs-3">.fs-3 text</p>
+<p class="fs-4">.fs-4 text</p>
+<p class="fs-5">.fs-5 text</p>
+<p class="fs-6">.fs-6 text</p>
+
+
+
+<!-- Matnni qalinligi va matnga italic berish yani (weight) -->
+<h3>Font weight</h3>
+<p class="fw-bold">Bold text.</p>
+<p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+<p class="fw-normal">Normal weight text.</p>
+<p class="fw-light">Light weight text.</p>
+<p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+<p class="fst-italic">Italic text.</p>
+<p class="fst-normal">Text with normal font style</p>
+
+
+<!-- Qator balandligii classlar yordamida ko'rsatish -->
+<h3>Qator balandligini classlar yordamida korsatish</h3>
+<p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+
+
+
+
+
+<!-- Matnni monospace ko'rinishiga o'tkazish -->
+<h3>Matnni monospace korinishga o'tkazish</h3>
+<p class="font-monospace">This is in monospace</p>
+
+
+
+<!-- Reset color element o'z rangini ota-ona (parent) elementdan oladigan qilish uchun maxsus class mavjud -->
+<h3>Reset rang berish</h3>
+<p class="text-muted">
+    Muted text with a <a href="#" class="text-reset">reset link</a>.
+  </p>
+
+
+  <!-- Text decoration bu elementga chiziq berish uchun ishlatiladi -->
+  <h3>Text decoration classlar</h3>
+  <p class="text-decoration-underline">This text has a line underneath it.</p>
+  <p class="text-decoration-line-through">This text has a line going through it.</p>
+  <a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+  
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

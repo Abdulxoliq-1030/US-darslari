@@ -1,0 +1,38 @@
+/* Align-items haqida misollar */
+.flex-container-1 {
+    display: flex;
+    height: 400px;
+    padding: 20px;
+    background-color: #025955;
+    border-radius: 10px;
+    align-items: baseline;
+}
+
+.flex-item-1 {
+    padding: 60px 15px;
+    background-color: #fde8cd;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Align-content uchun misollar */
+
+.flex-container-2 {
+    margin-top: 50px;
+    display: flex;
+    height: 700px;
+    padding: 20px;
+    background-color: #025955;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.flex-item-2 {
+    padding: 60px 20px;
+    background-color: #fde8cd;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visually hidden stretch links text-truncation</title>
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <!-- Visually hiddenning vazifasi imkoniyati cheklangan insonlarni veb sahifani oqishi uchun ishlatiladi 
+    <h2 class="visually-hidden">Title for screen readers</h2>
+<a class="visually-hidden-focusable" href="#content">Skip to main content</a>
+<div class="visually-hidden-focusable">A container with a <a href="#">focusable element</a>.</div>
+    -->
+
+
+<!-- Stretched link buning vazifasi butun cardni havola korinishiga keltirish-->
+<div class="container mt-5">
+    <h3>Stretched link buning vazifasi butun havolani link korinishiga keltirish</h3>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card with stretched link</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+        </div>
+      </div>
+</div>
+
+
+<!-- Stretched to'g'ri ishlashi uchun uni orab turgan ota ona (parent) elementi position relative hossasiga ega bolishi kerak -->
+ <div class="container">
+     <div class="mt-5">
+        <div class="row g-0 bg-light position-relative">
+            <div class="col-md-6 mb-md-0 p-md-4">
+            </div>
+            <div class="col-md-6 p-4 ps-md-0">
+              <h5 class="mt-0">Columns with stretched link</h5>
+              <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+              <a href="#" class="stretched-link">Go somewhere</a>
+            </div>
+          </div>
+     </div>
+ </div>
+
+
+ <!-- Text truncate buning vazifasi uzun matnlarni qisqartirish uchun ishlatiladi -->
+    <div class="container">
+        <div class="mt-5">
+            <!-- Block level -->
+            <h3>text truncate</h3>
+ <div class="row">
+    <div class="col-2 text-truncate">
+      This text is quite long, and will be truncated once displayed.
+    </div>
+  </div>
+  
+  <!-- Inline level -->
+  <span class="d-inline-block text-truncate" style="max-width: 150px;">
+    This text is quite long, and will be truncated once displayed.
+  </span>
+        </div>
+    </div>
+
+
+
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

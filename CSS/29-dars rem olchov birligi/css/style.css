@@ -1,0 +1,74 @@
+/* html elementimiz font-size hossasiga ega bolmagan paytda u togridan togri 
+ chromening ozini hossasiga boradi uning hossasi 16px   
+.box {
+    height: 600px;
+    width: 500px;
+    border: 5px solid crimson;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    padding: 5rem;
+}
+
+ html Elementimiz uchun font-size hossasi korsatilganda  
+
+html {
+    font-size: 32px;
+}
+
+.box-2 {
+    height: 600px;
+    width: 500px;
+    border: 5px solid black;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 5rem;
+}
+
+
+
+.parent-box {
+    font-size: 1.5rem;
+}
+
+.child-box {
+    font-size: 2rem;
+}
+
+.box-3 {
+    height: 600px;
+    width: 500px;
+    border: 5px solid deeppink;
+    border-radius: 0.5rem;
+    padding: 5rem;
+
+}
+*/
+
+/* Remni amaliyotda sinash */
+
+html {
+    font-size: 20px;
+}
+
+.container {
+    padding: 0.5rem;
+    border: 5px solid olive;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.container h6 {
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+.container p {
+    font-size: 0.8rem;
+}
+
+.container span {
+    font-size: 10px;
+}

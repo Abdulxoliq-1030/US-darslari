@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms styles</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <form action="/server.php" method="GET">
+        <label for="firstname">Name</label>
+        <input type="text" id="firstname" name="firstname">
+
+        <label for="lastname">Surname</label>
+        <input type="text" id="lastname" name="lastname">
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="uzbekistan">Uzbekistan</option>
+            <option value="russia">Russia</option>
+            <option value="usa">USA</option>
+        </select>
+        <label for="message">Xabar</label>
+        <textarea name="message" id="message"></textarea>
+        <button type="submit" class="button">Submit</button>
+    </form>
+</div>
+</body>
+</html>

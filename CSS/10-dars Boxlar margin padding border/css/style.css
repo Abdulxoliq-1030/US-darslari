@@ -1,0 +1,14 @@
+/* Padding ishlatilishi */
+.box {
+    background-color: red;
+    padding: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue;
+    margin: 20px;
+}
+
+.box-2 {
+    background-color: chartreuse;
+    margin: 50px;
+}

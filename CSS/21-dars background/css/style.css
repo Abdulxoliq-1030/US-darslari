@@ -1,0 +1,9 @@
+.box {
+ height: 500px;
+ background-image: url(../images/main.jpg);
+ color: #fff;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: 600px 150px;
+ border: 5px solid red;
+}

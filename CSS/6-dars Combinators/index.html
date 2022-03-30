@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Combinators</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+
+
+            /* Avlod selektori
+       div p {
+           background-color: goldenrod;
+       }
+*/
+
+       /* Farzand selektori
+       div > p {
+           background-color: olive;
+       }
+ */
+
+       /* Qo'shni qardosh selektori 
+       div + p {
+           background-color: orangered;
+       }
+*/
+       /* Umumiy qardosh selektori */
+         div ~ p {
+         background-color: magenta;
+       } 
+
+
+
+        </style>
+    </head>
+    <body>
+
+
+        <!-- HTML tree -->
+ <!-- HTML tree -> buning manosi grafika degani soddaroq qib tushuntirganda  -->
+
+ <!-- Combinatorlar selectorlar orasidagi munosabatga aytiladi masalan divni birinchi topadi va buni ichidagi barcha p larga backround-color beradi  -->
+
+      <!-- Combinatorlarning yozilishi ularning 4 xil turi mavjud
+    1 -> Descendant selector (avlod selektori)
+    2 -> Child selector (farzand selektori)
+    3 -> Adjacent sibling selector (qo'shni qardosh selektori)
+    4 -> General sibling selector (umumiy qardosh selektori) -->
+
+<!-- 
+<h3>Quyidagi yozilgan kod Descendant selector avlod selektori hisoblanadi bu styleda bitta probel bilan yoziladi   </h3>  
+        <div>
+            <p>Paragraph 1: divni ichida</p>
+            <p>Paragraph 2: divni ichida</p>
+            <section>
+                <p>Paragraph 3: divni ichida</p>
+            </section>
+        </div>
+        <p>Paragraph 4: divni ichida emas.</p> -->
+
+
+
+<!-- 
+        <h3>Quyidagi yozilgan kod child selector farzand selektori hisoblanadi bu faqat divni farzandi bolgan p elementlarini oladi </h3> 
+        <div>
+             <p>Paragraph 1: divni ichida</p>
+            <p>Paragraph 2: divni ichida</p>
+            <section>
+                 <p>Paragraph 3: divni ichida</p>
+            </section>
+             <p>Paragraph 4: divni ichida</p>
+        </div>
+              <p>Paragraph 5: divni ichida emas</p>
+              <p>Paragraph 6: divni ichida emas</p> -->
+
+
+
+
+ <!-- <h3>
+    Quyidagi yozilgan kod Adjacent sibling selector qo'shni qardosh selektori  buning vazifasi divni tugashidan keyingi birinchi paragraphni oladi 
+ </h3>
+<p>Bir elementga qo'shni bolgan boshqa elementni tanlash uchun ishlatiladi </p>
+<div>
+    <p>Paragraph 1: divni ichida.</p>
+    <p>Paragraph 2: divni ichida.</p>
+</div>
+
+<p>Paragraph 3: divdan  keyin.</p>
+<p>Paragraph 4:  divdan keyin.</p>
+
+<div>
+    <p>Paragraph 1: divni ichida.</p>
+    <p>Paragraph 1: divni ichida.</p>
+    <p>Paragraph 1: divni ichida.</p>
+</div>
+
+<p>Paragraph 3: divdan  keyin.</p>
+<p>Paragraph 4:  divdan keyin.</p>
+-->
+
+
+
+<!-- <h3>
+    Quyidagi yozilgan kod General sibling selector Umumiy qardosh selektori buning vazifasi bir elementga qo'shni bo'lgan barcha elementlarni tanlash uchun ishlatiladi yani quyidagi kodda yozilgan divdan keyingi barcha p larni stylega oladi 
+</h3>
+
+
+<h2>Umumiy qardosh selektori</h2>
+<p>Bir elementga qo'shni bolgan barcha elementlarni tanlash uchun ishlatiladi</p>
+
+<div>
+    <p>Paragraph 1: divni ichida.</p>
+    <p>Paragraph 2: divni ichida.</p>
+</div>
+<p>Paragraph 3: divdan keyin.</p>
+<p>Paragraph 4: divdan keyin.</p>
+
+<div>
+    <p>Paragraph 5: divni ichida.</p>
+    <p>Paragraph 6: divni ichida.</p>
+</div>
+<p>Paragraph 3: divdan keyin.</p>
+<p>Paragraph 4: divdan keyin.</p> -->
+
+</body>
+</html>

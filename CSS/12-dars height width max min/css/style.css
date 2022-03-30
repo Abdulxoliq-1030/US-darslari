@@ -1,0 +1,57 @@
+/* html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.box {
+    background-color: crimson;
+    height: 100%;
+} */
+
+
+
+/* .box {
+    background-color: crimson;
+    width: 50%;
+    
+} */
+
+
+/* 
+.paragraph-1 {
+    background-color: cyan;
+    max-height: 70px;
+    overflow: auto;
+} */
+
+
+/* .paragraph-2 {
+    background-color: teal;
+    min-height: 30px;
+} */
+
+
+
+
+/* Max-width uchun misol 
+.box-1 {
+    width: 1000px;
+    background-color: yellow;
+}
+
+.box-2 {
+    max-width: 1000px;
+    background-color: bisque;
+}
+*/
+
+
+/* Min-width uchun misol */
+.example {
+    background-color: chocolate;
+    display: inline-block;
+    min-width: 200px;
+}

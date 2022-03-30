@@ -1,0 +1,96 @@
+/* Bitta xossaga transition qilish */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: width 2s;
+}
+
+.box:hover {
+    width: 400px;
+}
+
+/* Bir necha xossalarga transition qilish */
+
+.box-2 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    transition: width 2s, background-color 4s;
+}
+
+
+.box-2:hover {
+width: 400px;
+background-color: rebeccapurple;
+}
+
+
+/* Hamma xossalarga birdaniga transitionni ishlatish */
+.box-3 {
+    width: 200px;
+    height: 200px;
+    background-color: rosybrown;
+    transition: all 2s;
+}
+
+.box-3:hover {
+    width: 400px;
+    background-color: sienna;
+}
+
+
+/* transition timing function haqida  */
+.box-4 {
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
+    transition: width 2s;
+    margin-bottom: 20px;
+}
+
+.box-4:hover {
+    width: 400px;
+}
+
+.ease {
+    transition-timing-function: ease;
+}
+
+.linear{
+    transition-timing-function: linear;
+}
+
+.ease-in {
+    transition-timing-function: ease-in;
+}
+
+.ease-out {
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.cubic-bezier {
+    transition-timing-function: cubic-bezier(0.25,0.1,0.19,1.46)
+}
+
+
+
+
+
+/* Transition delay function haqida */
+
+.box-5 {
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    transition: width 2s;
+    transition-delay: 2s;
+}
+
+.box-5:hover {
+    width: 400px;
+}

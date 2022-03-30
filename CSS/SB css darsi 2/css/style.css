@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* INLINE BLOCK */
+
+/* #inline-block {
+    width: 80%;
+    background-color: brown;
+    margin: 0 auto;
+}
+
+.box {
+    display: inline-block;
+    width: 33%;
+    background-color: cadetblue;
+    padding: 10px;
+} */
+
+
+/* DISPLAY GRID */
+
+/* .container {
+    width: 80%;
+    margin: 0 auto ;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 10px;
+}
+
+.child {
+    background-color: crimson;
+} */
+
+
+
+/* DISPLAY FLEX 
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar  {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    margin: 0 20px;
+}
+*/
+
+
+/* Position (relative) 
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: crimson;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+.box-absolute {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+*/
+
+/* Position (Absolute) 
+.absolute {
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+*/
+
+.fixed {
+    width: 100%;
+    height: 10vh;
+    background-color: darkcyan;
+    position: fixed;
+    top: 0;
+    
+}
+
+.content {
+    width: 100%;
+    height: 200vh;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

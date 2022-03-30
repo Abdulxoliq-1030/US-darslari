@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+.logo {
+    display: inline-block;
+    padding: 1.35rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#header-section {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/pexels-arthouse-studio-4534200.jpg);
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Navigation */
+.navigation-items {
+    float: right;
+    padding: 1.5rem;
+}
+
+.navigation-item {
+    display: inline;
+    padding: 1.35rem;
+}
+
+.navigation-item a {
+    text-decoration: none;
+    color: #ffff;
+    
+}
+
+.navigation-item a:hover {
+   transition: 0.5s ease;
+   border-bottom: 1px solid #fff;
+}
+
+/* Showcase */
+
+#showcase {
+    text-align: center;
+    padding-top: 4.5rem;
+    letter-spacing: 3px;
+}
+
+#showcase .showcase__text {
+    padding-bottom: 1.25rem;
+    color: #fff;
+}
+
+#showcase h1 {
+    color: #fff;
+    font-size: 45px;
+}
+#showcase .bg-light {
+    color: #797979;
+}
+.showcase__icon {
+    cursor: pointer;
+    font-size: 25px;
+    padding-top: 1.25rem;
+    letter-spacing: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* Banner section */
+#banner-section {
+    background-color: #edebeb;
+    height: 60vh;
+
+}
+
+#banner-section .left-section {
+    float: left;
+    width: 30%;
+}
+
+#banner-section .left-section img {
+    height: 30rem;
+    padding-top: 30px;
+}
+
+
+#banner-section .right-section {
+    float: right;
+    width:70%;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    line-height: 25px;
+}
+
+
+#banner-section .right-section  input {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    height: 35px;
+    padding: 10px;
+}
+
+
+#banner-section .right-section button {
+    padding: 10px;
+    width: 100px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+#banner-section .right-section .btn-dark {
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+#banner-section .right-section .btn-dark:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.5s ease;
+}
+
+#banner-section .right-section .btn-light{
+    background-color: #a19f9f;
+    color: #000;
+    cursor: pointer;
+}
+
+#banner-section .right-section .btn-light:hover{
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+
+/* Service section */
+#services__section {
+    background-color: #ccc8c8;
+    height: 100vh;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 30px;
+}
+
+#services__section h1 {
+    margin-bottom: 30px;
+}
+
+#services__section .services__box {
+    display: inline;
+    width: 33.3%;
+    padding: 50px;
+    height: 150px;
+    margin-top: 25px;
+    box-sizing: border-box;
+    font-size: 20px;
+
+}
+
+#services__section .services__box .box-1 {
+    background-color: #fff;
+    float: left;
+    padding: 70px;
+    width: 31%;
+}
+
+#services__section .services__box .box-1:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+#services__section .services__box .box-2 {
+    background-color: #fff;
+    float: left;
+    margin-left: 20px;
+    padding: 70px;
+    width: 31%;
+    
+}
+#services__section .services__box .box-2:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+#services__section .services__box .box-3 {
+    background-color: #fff;
+    float: left;
+    padding: 70px;
+    margin-left: 20px;
+    width: 31%;   
+}
+
+#services__section .services__box .box-3:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.clr {
+    clear: both;
+}
+
+
+#services__section .services__box .box-4 {
+    background-color: #fff;
+    float: left;
+    padding: 70px;
+    width: 31%;
+    margin-top: 20px;   
+}
+#services__section .services__box .box-4:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+#services__section .services__box .box-5 {
+    background-color: #fff;
+    float: left;
+    margin-left: 20px;
+    padding: 70px;
+    width: 31%;
+    margin-top: 20px;
+}
+
+#services__section .services__box .box-5:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+#services__section .services__box .box-6 {
+    background-color: #fff;
+    float: left;
+    padding: 70px;
+    margin-left: 20px;
+    width: 31%;  
+    margin-top: 20px; 
+}
+
+#services__section .services__box .box-6:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s ease;
+}

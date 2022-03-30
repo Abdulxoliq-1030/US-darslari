@@ -1,0 +1,2 @@
+nav ul{margin:0;padding:0;list-style:none}nav ul a{color:red}nav li{display:inline-block}nav a{display:block;padding:6px 12px;text-decoration:none}nav .button{border-radius:4px}nav .button span{font-weight:400}.alert ul,.alert p,.warning ul,.warning p,.success ul,.success p{margin-right:0;margin-left:0;padding-bottom:0}ul>li{list-style-type:none}h2+p{border-top:1px solid gray}p ~ span{opacity:0.8}
+/*# sourceMappingURL=style.css.map */

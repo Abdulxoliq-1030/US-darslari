@@ -1,0 +1,26 @@
+.container {
+padding: 30px;
+}
+
+input[type=text],select,textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #2e856f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+background-color: #006a4e;
+}

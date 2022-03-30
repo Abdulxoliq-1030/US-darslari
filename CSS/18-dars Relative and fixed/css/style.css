@@ -1,0 +1,53 @@
+/* Relativga misol 1
+.box {
+    background-color: rebeccapurple;
+    height: 200px;
+    margin-top: 10px;
+    top: 30px;
+    right: 50px;
+    position: relative;
+}
+
+
+.link {
+    background-color: royalblue;
+    color: white;
+} 
+ /Relativga misol 1*/
+
+
+
+
+ /* Relativga misol 2
+.relativ-box {
+    position: relative;
+    top: 30px;
+    background-color: turquoise;
+    height: 100px;
+}
+
+.box-2 {
+    background-color: red;
+    height: 50px;
+}
+
+ Relativga misol 2 */
+
+ body {
+     height: 1000px;
+     
+ }
+
+ .fixed-box {
+     position: fixed;
+     background-color: thistle;
+     top: 0;
+     right: 0;
+     height: 100px;
+     width: 100%;
+ }
+
+ .box {
+     background-color: red;
+     height: 200px;
+ }

@@ -1,0 +1,53 @@
+/* Rotatega misollar */
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: brown;
+    transform: rotate(90deg);
+}
+
+.parent-box {
+    margin-top: 100px;
+    border: 5px solid blue;
+}
+
+.box-2 {
+    height: 100px;
+    background-color: green;
+    transform: rotate(45deg);
+    transform-origin: top right;
+}
+
+/* translatega misollar */
+
+.box-3 {
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    transform: translate(20px 40px);
+}
+
+/* scalega misollar */
+
+.box-4 {
+    width: 500px;
+    height: 500px;
+    background-color: chartreuse;
+    transform: scale(1,1);
+}
+
+.box-5 {
+    width: 500px;
+    height: 500px;
+    background-color: darkcyan;
+    transform: scale(0.5, 0.25);
+}
+
+/* Skewga misollar */
+
+.box-6 {
+    width: 500px;
+    height: 500px;
+    background-color: darkorange;
+    transform: skew(20deg, 30deg);
+}

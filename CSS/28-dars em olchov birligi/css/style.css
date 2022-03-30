@@ -1,0 +1,76 @@
+/* Classimizning ozida fontsize hossasi bolgan holatida  */
+.box {
+    height: 600px;
+    width: 1000px;
+    border: 5px solid crimson;
+    font-size: 20px;
+    border-radius: 0.5em;
+    padding: 5em;
+}
+
+/* Classimizning ajdodida font-size hossasi bolgan holatda */
+.parent-box {
+    font-size: 30px;
+}
+
+.box-2 {
+    margin-top: 3em;
+    height: 600px;
+    width: 1000px;
+    border: 5px solid green;
+    border-radius: 0.5em;
+    padding: 5em;
+}
+
+
+/* Umuman font-size hossasi yoq bolganda */
+
+.box-3 {
+    margin-top: 5em;
+    height: 600px;
+    width: 1000px;
+    border: 5px solid coral;
+    border-radius: 0.5em;
+    padding: 5em;
+}
+
+
+/* Elementlarimiz nested holatda joylashganda */
+.parent-box {
+    font-size: 30px;
+}
+
+.child-box {
+    font-size: 2em;
+}
+
+.box-4 {
+    height: 600px;
+    width: 1000px;
+    border: 5px solid blueviolet;
+    border-radius: 0.5em;
+    padding: 5em;
+}
+
+
+/* Amaliyotda ishlatish */
+
+.container {
+    font-size: 30px;
+    padding: 0.5em;
+    border: 3px dashed chocolate;
+}
+
+.container h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+.container h6 {
+    font-size: 0.9em;
+    margin-top: 0.2;
+}
+
+.container p {
+    font-size: 0.8;
+}

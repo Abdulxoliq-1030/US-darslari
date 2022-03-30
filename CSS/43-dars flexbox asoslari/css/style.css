@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+}
+
+
+/* Flex container uchun xossalar 
+1 -> flex-direction
+2 -> flex-wrap
+3 -> flex-flow
+4 -> justify-content
+5 -> align-items
+6 -> align-content */
+
+/* flex containerga misol */
+.flex-container {
+    display: flex;
+    padding: 20px;
+    background-color: #025955;
+    border-radius: 10px;
+}
+
+.flex-item {
+    padding: 60px 30px;
+    background-color: #fde8cd;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+
+
+
+/* Flex items uchun xossalar 
+1 -> order
+2 -> flex-grow
+3 -> flex-shrink
+4 -> flex-basis
+5 -> flex
+6 -> align-self*/
+
+/* Flex itemga misollar */
+
+.flex-containerr {
+    margin-top: 30px;
+    display: flex;
+    padding: 20px;
+    background-color: darkcyan;
+    border-radius: 10px;
+}
+
+.flex-item-2 {
+    padding: 60px 15px;
+    background-color: #fde8cd;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+}

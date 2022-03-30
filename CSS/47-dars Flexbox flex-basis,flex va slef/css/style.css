@@ -1,0 +1,71 @@
+/* Flex-basis uchun misollar */
+.flex-container {
+    display: flex;
+    padding: 20px;
+    background-color: #025955;
+    border-radius: 10px;
+}
+
+.flex-item {
+    padding: 60px 15px;
+    background-color: #fde8cd;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.flex-basis-300 {
+    flex-basis: 300px;
+}
+
+/* Flex uchun misollar
+bu flexning vazifasi:
+1-> qiymat flex-grow
+2-> qiymat flex-shrink
+3-> qiymat flex-basis */
+.flex-container-2 {
+    margin-top: 50px;
+    display: flex;
+    padding: 20px;
+    background-color: #025955;
+    border-radius: 10px;  
+}
+
+.flex-item-2 {
+    padding: 60px 15px;
+    background-color: #fde8cd;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.flex-itemm {
+    flex: 0 0 400px;
+}
+
+
+/* Align-self uchun misollar */
+
+.flex-container-3 {
+
+    margin-top: 50px;
+    height: 400px;
+    display: flex;
+    padding: 20px;
+    background-color: #025955;
+    border-radius: 10px; 
+    align-items: flex-start; 
+}
+
+.flex-item-3 {
+    padding: 60px 15px;
+    background-color: #fde8cd;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.flex-itemmm {
+align-self: auto;
+}
+

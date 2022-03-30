@@ -1,0 +1,232 @@
+
+/* Reversega misol */
+@keyframes box-mover {
+    0% {
+        left: 0;
+        background-color: red;
+        width: 100px;
+    }
+
+    100% {
+        left: 500px;
+        background-color: green;
+        width: 600px;
+    }
+}
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: red;
+    color: #fff;
+    animation-name: box-mover;
+    animation-duration: 4s;
+    animation-direction: reverse;
+}
+
+
+@keyframes box {
+    0% {
+        left: 0;
+        background-color: pink;
+        width: 100px;
+    }
+    100% {
+        left: 500px;
+        background-color: yellow;
+        width: 400px;
+    }
+}
+
+
+/* alternate-reversega misol */
+.box-2 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: sandybrown;
+    color: #fff;
+    animation-name: box;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 2;
+}
+
+
+
+
+/* animation-timing-functionga misol */
+@keyframes boxx {
+    0% {
+        left: 0;
+        background-color: violet;
+        width: 200px;
+    }
+
+    100% {
+        left: 500px;
+        background-color: wheat;
+        width: 400px;
+    }
+}
+
+.box-3 {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: steelblue;
+    color: #fff;
+    animation-name: boxx;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+
+/* Animation fill-modedagi both ga misol */
+@keyframes boxxx  {
+           0% {
+           left: 0;
+           background-color: tan;
+           width: 200px;
+       }
+       100%{ 
+           left: 500px;
+           background-color: teal;
+           width: 400px;
+       }
+}
+
+.box-4 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: black;
+    color: #fff;
+    animation-name: boxxx;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: 5s;
+
+}
+
+
+
+
+/* Animation fill-modedagi forwards misol */
+@keyframes box-5  {
+    0% {
+    left: 0;
+    background-color: cornsilk;
+    width: 200px;
+       }
+       100%{ 
+           left: 500px;
+           background-color: coral;
+           width: 400px;
+       }
+}
+
+.box-5 {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: black;
+    color: #fff;
+    animation-name: box-5;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+
+/* Animation fill-modedagi backwardsga misol */
+@keyframes box-6  {
+    0% {
+    left: 0;
+    background-color: cadetblue;
+    width: 200px;
+       }
+       100%{ 
+           left: 500px;
+           background-color: cornsilk;
+           width: 400px;
+       }
+}
+
+.box-6 {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: black;
+    color: #fff;
+    animation-name: box-6;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+    animation-delay: 5s;
+
+}
+
+
+/* Animation fill-modedagi animation-play-state ga misol */
+@keyframes box-7  {
+    0% {
+    left: 0;
+    background-color: greenyellow;
+    width: 200px;
+       }
+       100%{ 
+           left: 500px;
+           background-color: olivedrab;
+           width: 400px;
+       }
+}
+
+.box-7 {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: green;
+    color: #fff;
+    animation-name: box-7;
+    animation-duration: 4s;
+
+}
+
+.box-7:hover {
+    animation-play-state: paused;
+}
+
+
+
+/* Animation fill-modedagi animationga misol */
+
+@keyframes box-8  {
+    0% {
+    left: 0;
+    background-color: yellow;
+    width: 200px;
+       }
+       100%{ 
+           left: 500px;
+           background-color: #f98232;
+           width: 400px;
+       }
+}
+
+.box-8 {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: green;
+    color: #fff;
+    animation: box-8 4s linear 3s 2 backwards alternate running;
+    
+
+}

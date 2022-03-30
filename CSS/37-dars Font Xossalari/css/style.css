@@ -1,0 +1,64 @@
+/* Font style xossasi uchun misollar */
+.font-style-normal {
+    font-style: normal;
+}
+
+.font-style-oblique {
+    font-style: oblique;
+} 
+
+.font-style-italic {
+    font-style: italic;
+}
+
+/* Font weight xossasi uchun misollar */
+
+.font-weight-normal {
+    font-weight: 400;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.font-weight-bolder {
+    font-weight: bolder;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+
+/* Line-height ucun misollar */
+
+.line-height-normal {
+    line-height: normal;
+}
+
+
+.line-height-son {
+    line-height: 1.6;
+}
+
+.line-height-uzunlik {
+    line-height: 30px;
+}
+
+.line-height-foiz {
+    line-height: 90%;
+}
+
+
+
+.letter-spacing-normal {
+    letter-spacing: normal;
+}
+
+.letter-spacing-positive-length {
+    letter-spacing: 10px;
+}
+
+.letter-spacing-negative-length {
+    letter-spacing: -5px;
+}

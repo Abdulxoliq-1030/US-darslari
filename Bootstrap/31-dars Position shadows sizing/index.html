@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position shadows sizing</title>
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <style>
+        .box-container {
+            height: 200px;
+            background-color: #f5f5f5;
+        }
+
+        .black-box {
+            width: 2em;
+            height: 2em;
+            background-color: #215259;
+            border-radius: .25rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Position bu elementning sahifadagi joylashuvini belgilash uchun ishlatiladi -->
+    <h3>Position xossalari</h3>
+    <div class="position-static">Position xossasi static qiymatga ega element</div>
+    <div class="position-relative">Position xossasi uchun relative qiymatga ega element</div>
+    <div class="position-absolute">Position xossasi uchun absolute qiymatga ega element</div>
+    <div class="position-fixed">Position xossasi uchun fixed qiymatga ega element</div>
+    <div class="position-sticky">Position xossasi uchun sticky qiymatga ega element</div>
+
+
+
+
+    <!-- Position elementlarini o'zimiz hohlagan joyga joylashtirish joylashtirish -->
+    <h3>Position elementlarini joylashtirish</h3>
+    <div class="position-relative box-container">
+        <div class="position-absolute top-0 start-0 black-box"></div>
+        <div class="position-absolute top-0 end-0 black-box"></div>
+        <div class="position-absolute top-50 start-50 black-box"></div>
+        <div class="position-absolute bottom-50 end-50 black-box"></div>
+        <div class="position-absolute bottom-0 start-0 black-box"></div>
+        <div class="position-absolute bottom-0 end-0 black-box"></div>
+    </div>
+
+    <!-- Position elementlarini markazga joylashtirish -->
+    <h3>Position elementlarini markazga joylashtirish</h3>
+    <div class="position-relative m-5 box-container">
+        <div class="position-absolute top-0 start-0 translate-middle black-box"></div>
+        <div class="position-absolute top-0 start-50 translate-middle black-box"></div>
+        <div class="position-absolute top-0 start-100 translate-middle black-box"></div>
+        <div class="position-absolute top-50 start-0 translate-middle black-box"></div>
+        <div class="position-absolute top-50 start-50 translate-middle black-box"></div>
+        <div class="position-absolute top-50 start-100 translate-middle black-box"></div>
+        <div class="position-absolute top-100 start-0 translate-middle black-box"></div>
+        <div class="position-absolute top-100 start-50 translate-middle black-box"></div>
+        <div class="position-absolute top-100 start-100 translate-middle black-box"></div>
+    </div>
+
+
+    <!-- Translatega x va y qiymatlarini o'zini ham berishimiz mumkin -->
+    <h3>Position qiymatiga x va y qiymatlar berish</h3>
+    <div class="position-relative box-container">
+        <div class="position-absolute top-0 start-0 black-box"></div>
+        <div class="position-absolute top-0 start-50 translate-middle-x black-box"></div>
+        <div class="position-absolute top-0 end-0 black-box"></div>
+        <div class="position-absolute top-50 start-0 translate-middle-y black-box"></div>
+        <div class="position-absolute top-50 start-50 translate-middle black-box"></div>
+        <div class="position-absolute top-50 end-0 translate-middle-y black-box"></div>
+        <div class="position-absolute bottom-0 start-0 black-box"></div>
+        <div class="position-absolute bottom-0 start-50 translate-middle-x black-box"></div>
+        <div class="position-absolute bottom-0 end-0 black-box"></div>
+      </div>
+
+      <!-- Position classlardan qachon foydalanamiz -->
+      <h3>Position classlar nimalarga ishlatilishi</h3>
+    <div class="d-flex justify-content-between m-5">
+        <button type="button" class="btn btn-primary position-relative">
+            Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99 <span class="visually-hidden">unread messages</span></span>
+          </button>
+          
+          <button type="button" class="btn btn-dark position-relative">
+            Marker <svg width="1em" height="1em" viewBox="0 0 16 16" class="position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill" fill="#212529" xmlns="http://www.w3.org/2000/svg"><path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+          </button>
+          
+          <button type="button" class="btn btn-primary position-relative">
+            Alerts <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden">unread messages</span></span>
+          </button>
+    </div>
+
+
+
+
+
+
+
+    <!-- Shadows classi  bu classning vazifasi elementga soya qo'shish uchun ishlatiladi -->
+    <div class="m-5">
+        <h3>Elementga soya berish uchun shadows classlaridan foydalanamiz</h3>
+        <div class="shadow-none p-3 mb-5 bg-light rounded">Soyasiz</div>
+        <div class="shadow-sm p-3 mb-5 bg-body rounded">Kichik soya</div>
+        <div class="shadow p-3 mb-5 bg-body rounded">Odatiy soya</div>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">Kattaroq soya</div>
+    </div>
+
+
+    <!-- Sizing utilites -> bu maxsus class bolib, elementning o'lchovlarini ya'ni balandligi va kengligini o'zgartirish imkonini beradi -->
+    <h3>Sizing  classi bu elementimizning o'lchovlari yani balandligini o'zgartirish uchun</h3>
+    <div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+    <div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+    <div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+    <div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+    <div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+
+
+    
+    <!-- Sizing orqali nafaqat width balki heightga ham o'lcham berish mumkin -->
+    <h3>Sizing orqali heightga ham o'lcham berish</h3>
+    <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+        <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+        <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+        <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+        <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+        <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto</div>
+      </div>
+
+
+
+      <!-- Max-width orqali elementga o'lcham berish -->
+      <h3>Max-width orqali elementga o'lcham berish</h3>
+      <div class="mw-100 p-5 text-center text-white m-3" style="background-color: #215259;">
+       Max-width 100%
+    </div>
+
+
+    <!-- Max-height orqali elementga o'lcham berish -->
+     <div style="height: 100px; background-color: rgba(255,0,0,.1);">
+    <div class="mh-100" style="width: 100px; height: 200px; background-color: rgba(0,0,255,.1);">Max-height 100%</div>
+    </div>
+
+
+
+    <!-- Viewport orqali elementga o'lchov berish -->
+    <h3>Viewport orqali elementga o'lcham berish</h3>
+    <div class="min-vw-100 bg-secondary border border-danger">Min-width 100vw</div>
+    <div class="min-vh-100 bg-secondary border border-danger">Min-height 100vh</div>
+    <div class="vw-100 bg-secondary border border-danger">width 100vw</div>
+    <div class="vh-100 bg-secondary border border-danger">height 100vh</div>
+    
+
+
+
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.cirlce {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+// Nesting -> Ko'pgina CSS xossalari bir xil prefiks bilan boshlanadi. Masalan: font-family,font-size, va font-weight - bular hammasi font- prefiksga ega. SASS yordamida prefiksni qayta-qayta yozmasdan, xossalarni nesting qilish orqali ancha tartibli kod yozish imkoniyati mavjud. Bu holatda tashqi xossa nomi ichki xossaga chiziqcha (-) bilan ajratilib kopilyatsiya bo'ladi.
+
+.heading {
+  font: {
+    family: "Helvetica", serif;
+    size: 40px;
+    weight: 800;
+  }
+}
+
+.enlarge {
+  transition: {
+    property: all;
+    duration: 4s;
+    delay: 2s;
+  }
+}
+
+.flex {
+  background: {
+    color: yellow;
+    position: center;
+    size: cover;
+  }
+}
+
+// Bu tepadagi kodni yozganimizdan so'ng CSS filemizda webkit degan so'zlar ham chiqadi bu kodning sababi malum bir browserlar kodni tanib olishi uchun shunaqa profiks chiqadi.
+
+// Qisqartmalar (shorthands) -> Ba'zi CSS xossalar o'zining shorthand ko'rinishiga ega. Shunday CSS xossalar uchun qisqartma va nested qiymatlarni bir vaqtning o'zida ko'rsatish imkoniyati mavjud.
+
+.info-page {
+  margin: auto {
+    bottom: 10px;
+    top: 2px;
+  }
+}

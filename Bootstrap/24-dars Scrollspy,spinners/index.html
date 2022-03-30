@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollspy spinners</title>
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <style>
+
+        /* Scrollspy hosil qilish uchun misol
+            .scrollspy-example {
+                  position: relative;
+                  height: 200px;
+                  margin-top: 0.5rem;
+                  overflow: auto;
+              }
+
+              */
+              .scrollspy-example {
+                  position: relative;
+                  height: 350px;
+                  overflow: auto;
+              }
+    </style>
+</head>
+<body>
+    
+    <!-- Scrollspy hosil qilish -
+ <div class="container">
+     <h3>Scrollspy hosil qilish</h3>
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">First</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Second</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <h4 id="scrollspyHeading1">First heading</h4>
+        <p>...</p>
+        <h4 id="scrollspyHeading2">Second heading</h4>
+        <p>...</p>
+        <h4 id="scrollspyHeading3">Third heading</h4>
+        <p>...</p>
+        <h4 id="scrollspyHeading4">Fourth heading</h4>
+        <p>...</p>
+        <h4 id="scrollspyHeading5">Fifth heading</h4>
+        <p>...</p>
+      </div>
+ </div>
+-->
+
+
+ <!-- Scrollspy Nested ichma-ich nav uchun misol -->
+ <div class="container mt-5">
+     <div class="container">
+         <h3>Ichma ich nested Scrollspy</h3>
+         <div class="row">
+             <div class="col-4">
+                <nav id="navbar-example3" class=" scrollspy-example navbar navbar-light bg-light flex-column align-items-stretch p-3">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <nav class="nav nav-pills flex-column">
+                      <a class="nav-link" href="#item-1">Item 1</a>
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                        <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                      </nav>
+                      <a class="nav-link" href="#item-2">Item 2</a>
+                      <a class="nav-link" href="#item-3">Item 3</a>
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                        <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                      </nav>
+                    </nav>
+                  </nav>
+             </div>
+             <div class="col-8">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" class="scrollspy-example" data-bs-offset="0" tabindex="0">
+                    <h4 id="item-1">Item 1</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente fuga architecto commodi delectus beatae repellendus dolore, facere deserunt nesciunt enim iusto atque quia hic modi nemo rem asperiores vitae officia maxime reprehenderit dolor, recusandae blanditiis. Blanditiis iste placeat quod, unde reprehenderit consequatur, debitis tempore deserunt quibusdam doloremque a! Maxime praesentium rem asperiores fuga similique libero saepe, facere voluptate nemo vero velit vitae tempora! Optio et iste atque, culpa fugiat eius alias, nemo magnam labore, amet dolorem corrupti. Adipisci doloribus quae non, odio repellendus similique maxime, nesciunt vitae qui porro molestias, explicabo vel culpa. Placeat itaque praesentium quam exercitationem, beatae blanditiis.</p>
+                    <h5 id="item-1-1">Item 1-1</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente fuga architecto commodi delectus beatae repellendus dolore, facere deserunt nesciunt enim iusto atque quia hic modi nemo rem asperiores vitae officia maxime reprehenderit dolor, recusandae blanditiis. Blanditiis iste placeat quod, unde reprehenderit consequatur, debitis tempore deserunt quibusdam doloremque a! Maxime praesentium rem asperiores fuga similique libero saepe, facere voluptate nemo vero velit vitae tempora! Optio et iste atque, culpa fugiat eius alias, nemo magnam labore, amet dolorem corrupti. Adipisci doloribus quae non, odio repellendus similique maxime, nesciunt vitae qui porro molestias, explicabo vel culpa. Placeat itaque praesentium quam exercitationem, beatae blanditiis.</p>
+                    <h5 id="item-1-2">Item 1-2</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente fuga architecto commodi delectus beatae repellendus dolore, facere deserunt nesciunt enim iusto atque quia hic modi nemo rem asperiores vitae officia maxime reprehenderit dolor, recusandae blanditiis. Blanditiis iste placeat quod, unde reprehenderit consequatur, debitis tempore deserunt quibusdam doloremque a! Maxime praesentium rem asperiores fuga similique libero saepe, facere voluptate nemo vero velit vitae tempora! Optio et iste atque, culpa fugiat eius alias, nemo magnam labore, amet dolorem corrupti. Adipisci doloribus quae non, odio repellendus similique maxime, nesciunt vitae qui porro molestias, explicabo vel culpa. Placeat itaque praesentium quam exercitationem, beatae blanditiis.</p>
+                    <h4 id="item-2">Item 2</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente fuga architecto commodi delectus beatae repellendus dolore, facere deserunt nesciunt enim iusto atque quia hic modi nemo rem asperiores vitae officia maxime reprehenderit dolor, recusandae blanditiis. Blanditiis iste placeat quod, unde reprehenderit consequatur, debitis tempore deserunt quibusdam doloremque a! Maxime praesentium rem asperiores fuga similique libero saepe, facere voluptate nemo vero velit vitae tempora! Optio et iste atque, culpa fugiat eius alias, nemo magnam labore, amet dolorem corrupti. Adipisci doloribus quae non, odio repellendus similique maxime, nesciunt vitae qui porro molestias, explicabo vel culpa. Placeat itaque praesentium quam exercitationem, beatae blanditiis.</p>
+                    <h4 id="item-3">Item 3</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente fuga architecto commodi delectus beatae repellendus dolore, facere deserunt nesciunt enim iusto atque quia hic modi nemo rem asperiores vitae officia maxime reprehenderit dolor, recusandae blanditiis. Blanditiis iste placeat quod, unde reprehenderit consequatur, debitis tempore deserunt quibusdam doloremque a! Maxime praesentium rem asperiores fuga similique libero saepe, facere voluptate nemo vero velit vitae tempora! Optio et iste atque, culpa fugiat eius alias, nemo magnam labore, amet dolorem corrupti. Adipisci doloribus quae non, odio repellendus similique maxime, nesciunt vitae qui porro molestias, explicabo vel culpa. Placeat itaque praesentium quam exercitationem, beatae blanditiis.</p>
+                    <h5 id="item-3-1">Item 3-1</h5>
+                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente fuga architecto commodi delectus beatae repellendus dolore, facere deserunt nesciunt enim iusto atque quia hic modi nemo rem asperiores vitae officia maxime reprehenderit dolor, recusandae blanditiis. Blanditiis iste placeat quod, unde reprehenderit consequatur, debitis tempore deserunt quibusdam doloremque a! Maxime praesentium rem asperiores fuga similique libero saepe, facere voluptate nemo vero velit vitae tempora! Optio et iste atque, culpa fugiat eius alias, nemo magnam labore, amet dolorem corrupti. Adipisci doloribus quae non, odio repellendus similique maxime, nesciunt vitae qui porro molestias, explicabo vel culpa. Placeat itaque praesentium quam exercitationem, beatae blanditiis.</p>
+                    <h5 id="item-3-2">Item 3-2</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente fuga architecto commodi delectus beatae repellendus dolore, facere deserunt nesciunt enim iusto atque quia hic modi nemo rem asperiores vitae officia maxime reprehenderit dolor, recusandae blanditiis. Blanditiis iste placeat quod, unde reprehenderit consequatur, debitis tempore deserunt quibusdam doloremque a! Maxime praesentium rem asperiores fuga similique libero saepe, facere voluptate nemo vero velit vitae tempora! Optio et iste atque, culpa fugiat eius alias, nemo magnam labore, amet dolorem corrupti. Adipisci doloribus quae non, odio repellendus similique maxime, nesciunt vitae qui porro molestias, explicabo vel culpa. Placeat itaque praesentium quam exercitationem, beatae blanditiis.</p>
+                  </div>
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+ <!--Scrollspy Royhatlar guruhi uchun misol -->
+  <div class="container mt-5">
+     <h3>Royhatlar uchun misol</h3>
+    <div class="row">
+    <div class="col-4">
+    <div id="list-example" class="list-group">
+    <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+    <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+    <a class="list-group-item list-group-item-action active" href="#list-item-4">Item 4</a>
+    </div>
+    </div>
+    <div class="col-8">
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <h4 id="list-item-1">Item 1</h4>
+    <p>Placeholder content for the scrollspy list-group example. This one relates to item 1. Don't need apologies. There is no fear
+    <h4 id="list-item-2">Item 2</h4>
+    <p>Placeholder content for the scrollspy list-group example. This one relates to item 2. Yeah, she dances to her own beat. Oh,
+    <h4 id="list-item-3">Item 3</h4>
+    <p>Placeholder content for the scrollspy list-group example. This one relates to item 3. We go higher and higher. Never one wit
+    <h4 id="list-item-4">Item 4</h4>
+    <p>Placeholder content for the scrollspy list-group example. This one relates to item 4. Summer after high school when we first
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <!-- Spinners haqida -->
+
+
+    <!-- Spinner yasash -->
+    <div class="container mt-5">
+        <h3>Spinner</h3>
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading....</span>
+        </div>
+    </div>
+
+
+    <!-- Spinner ranglari -->
+    <div class="container mt-5">
+        <h3>Spinner turlari</h3>
+         <div class="spinner-border text-primary" role="status">
+             <span class="visually-hidden">Loading...</span>
+         </div>
+         <div class="spinner-border text-secondary" role="status">
+             <span class="visually-hidden">Loading...</span>
+         </div>
+         <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-dark" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Growing yani o'sayotgan spinner -->
+    <div class="container mt-5">
+       <h3>Growing spinner</h3>
+       <div class="spinner-grow" role="status">
+           <span class="visually-hidden">Loading...</span>
+       </div>
+    </div>
+
+    <!-- Growing spinner ranglari -->
+    <div class="container mt-5">
+        <h3>Growing spinner colors</h3>
+       <div class="spinner-grow text-primary" role="status">
+         <span class="visually-hidden">Loading...</span>
+       </div>
+       <div class="spinner-grow text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-info" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-dark" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+
+
+
+    <!-- growing spinner va spinnerning o'lchamlari -->
+    <div class="container mt-5 mb-5">
+        <h3>Spinnerlar o'lchamlari</h3>
+         <div class="spinner-border spinner-border-sm">
+             <span class="visually-hidden">Loading...</span>
+         </div>
+         <div class="spinner-border spinner-border-lg">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow spinner-grow-sm text-primary">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow spinner-grow-lg text-info">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+
+
+    
+    <!-- Spinnerni tugma bilan birlashtirish -->
+    <div class="container mt-5 mb-5">
+        <h3>Tugma bilan birlashtirish</h3>
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="visually-hidden">Loading...</span>
+          </button>
+          <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button>
+    </div>
+
+
+
+
+
+
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

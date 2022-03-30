@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+
+    <!-- Carousel yaratish -->
+    <div class="container">
+        <div class="mt-3">
+             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                 <div class="carousel-inner">
+                     <div class="carousel-item active">
+                         <img src="./img/daniel-cheung-cPF2nlWcMY4-unsplash.jpg" class="d-block w-100" style="width: 20rem;" alt="Rasm uchun joy">
+                     </div>
+                     <div class="carousel-item">
+                         <img src="./img/pexels-esrageziyor-10251858.jpg" class="d-block w-100" style="width: 18rem;" alt="Rasm uchn joy">
+                     </div>
+                     <div class="carousel-item">
+                         <img src="./img/pexels-nikita-igonkin-10460823.jpg" class="d-block w-100" alt="Rasm uchun joy">
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+
+
+
+    <!-- Carousel boshqaruv elementlarini qo'shish sozlamalari -->
+    <div class="container">
+        <div class="mt-3">
+            <h1>Ikki yonida boshqaruvli carousel </h1>
+             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                 <div class="carousel-inner">
+                     <div class="carousel-item active">
+                         <img src="./img/pexels-nikita-igonkin-10460823.jpg" alt="Rasm uchun joy" class="d-block w-100">
+                     </div>
+                     <div class="carousel-item">
+                         <img src="./img/daniel-cheung-cPF2nlWcMY4-unsplash.jpg" class="d-block w-100" alt="Rasm uchun joy">
+                     </div>
+                     <div class="carousel-item">
+                         <img src="./img/pexels-nikita-igonkin-10460823.jpg" class="d-block w-100" alt="Rasm uchun joy">
+                     </div>
+                 </div>
+                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+             </div>
+        </div>
+    </div>
+
+
+    <!-- Korsatkichli indicators bilan ishlovchi carousel -->
+    <div class="container">
+        <div class="mt-5">
+            <h5>indicatorli rasm</h5>
+            <div id="carouselExampleIndicators" class="carousel slide" style="width: 30rem;" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.pexels.com/photos/10785664/pexels-photo-10785664.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Rasm uchun joy" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.pexels.com/photos/10668904/pexels-photo-10668904.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="rasm" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.pexels.com/photos/10086897/pexels-photo-10086897.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Rasm" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sarlavhalar bilan carousel yaratish -->
+
+    <div class="container">
+        <div class="mt-5">
+            <h5>Sarlavhali rasm</h5>
+            <div id="carouselExampleCaptions" class="carousel slide" style="width: 30rem;" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/pexels-nikita-igonkin-10460823.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/pexels-esrageziyor-10251858.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/daniel-cheung-cPF2nlWcMY4-unsplash.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+
+
+
+    <!-- Crossfade effekti bilan carousel yaratish -->
+    <div class="container">
+        <div class="mt-5">
+            <h5>Crossfade effekti berilgan rasm</h5>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" style="width: 30rem;" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/daniel-cheung-cPF2nlWcMY4-unsplash.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/pexels-esrageziyor-10251858.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/pexels-nikita-igonkin-10460823.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+
+
+    <!-- Carouselga interval yani vaqt berish -->
+    <div class="container">
+        <div class="mt-5">
+            <h5>interval effekti berilgan rasm</h5>
+            <div id="carouselExampleInterval" class="carousel slide" style="width: 30rem;" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./img/daniel-cheung-cPF2nlWcMY4-unsplash.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/pexels-nikita-igonkin-10460823.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/daniel-cheung-cPF2nlWcMY4-unsplash.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+
+    <!-- Toq yani dark korinishdagi rasm yaratish -->
+    <div class="container">
+        <div class="mt-5">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://images.pexels.com/photos/162140/duckling-birds-yellow-fluffy-162140.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/135940/pexels-photo-135940.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

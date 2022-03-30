@@ -1,0 +1,124 @@
+.container {
+    padding: 30px;
+    margin: 0 auto;
+}
+
+
+/* Radio buttonlar uchun container */
+.form-control {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Brauzerning radio buttonini berkitish */
+.form-control input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Maxsus radio buttonga style berish */
+.custom-radio {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+/* Sichqoncha olib borilganda orqa fon rangini o'zgartirish */
+.form-control:hover input ~ .custom-radio {
+    background-color: #ccc;
+}
+
+
+/* Radio button tanlanganda uning orqa fon rangini ozgartirish */
+.form-control input:checked ~ .custom-radio {
+background-color: #2d845e;
+}
+
+/* Radio button tanlanganini bildiruvchi style */
+.custom-radio::after {
+    top: 8px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Tanlangan paytida korsatish stylesi */
+.form-control input:checked ~ .custom-radio::after {
+    display: block;
+}
+
+
+/* Checkbox styles */
+
+
+/* Checkbox uchun container */
+.checkbox-control {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Brauzerning checkboxini berkitish */
+.checkbox-control input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Maxsus checkboxlarga style berish */
+.custom-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #ddd;
+    border-radius: 3px;
+}
+
+/* Sichqoncha olib borilganda orqa fon rangini o'zgartirish */
+.checkbox-control:hover input ~ .custom-checkbox {
+    background-color: #ccc;
+}
+
+/* Checkbox tanlangan paytida uning orqa fon rangini o'zgartirish */
+.checkbox-control input:checked ~ .custom-checkbox {
+    background-color: #2d845e;
+}
+
+
+/* Checkbox tanlanganligini bildirish */
+.custom-checkbox::after {
+
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-control input:checked ~ .custom-checkbox::after {
+    display: block;
+}

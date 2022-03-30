@@ -1,0 +1,26 @@
+/* CSS syntax */
+/* Masalan p { shunday korinishda boshlanadi  bu selectors deyiladi  yani tanlab oluvchi uning ichida esa proporties hossalari kiritiladi bu hossa ozini qiymatiga ega boladi */
+
+
+    /* Ajratib olish yani selectors usullari
+    1 -> Element tag orqali
+    2 -> Class orqali 
+    3 -> ID orqali 
+    4 -> Atribute orqali
+    5 -> Universal  */
+
+ p {
+     color: red;
+ }
+
+ .main-content {
+     color: blue;
+ }
+
+ #content {
+     color: chartreuse;
+ }
+
+ [disabled] {
+color: cornflowerblue;
+ }

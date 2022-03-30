@@ -1,0 +1,69 @@
+// sass bu yozgan kodimizni cssga o'girib tartiblash uchun ishlatiladi.
+
+// Nesting -> nestingni darajasi 3dan oshmasligi tavsiya etiladi chunki ko'payib ketadigan bo'lsa dasturning ishlash tezligiga juda katta tasir ko'rsatadi.
+
+// Nested tartibda yozilgan sass kod.
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      color: red;
+    }
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+
+  .button {
+    border-radius: 4px;
+
+    span {
+      font-weight: 400;
+    }
+  }
+}
+
+// Nested qoidalar selectorlar ro'yhati (vergul yordamida ajratilgan selektorlar) bilan birga ishlatilganda ancha qulaylik taqdim etadi.
+
+.alert,
+.warning,
+.success {
+  ul,
+  p {
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+}
+
+// Combinatorlar sass cssdagi kombinatorlarni ham ishlashini qo'llab quvvatlaydi. Kombinator simvolini tashqi selektor oxiriga,ichki selektor boshiga yoki ikkala selektorni o'rtasiga joylashtirishimiz mumkin.
+
+ul > {
+  li {
+    list-style-type: none;
+  }
+}
+
+h2 {
+  + p {
+    border-top: 1px solid gray;
+  }
+}
+
+p {
+  ~ {
+    span {
+      opacity: 0.8;
+    }
+  }
+}

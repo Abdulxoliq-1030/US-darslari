@@ -1,0 +1,29 @@
+.heading-1 {
+    background-color: crimson;
+}
+
+.link {
+    background-color: darkcyan;
+    color: #fff;
+}
+
+
+.block {
+    background-color: darkgreen;
+    color: #fff;
+    display: block;
+}
+
+.inline {
+    display: inline;
+    background-color: darkorange;
+}
+
+.to-inline-block {
+    display: inline-block;
+    background-color: darkorchid;
+}
+
+.to-none {
+    display: none;
+}

@@ -1,0 +1,108 @@
+/* .container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr; 
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.container1 {
+  padding: 10px;
+  background-color: aqua;
+}
+.container2 {
+  padding: 10px;
+  background-color: red;
+}
+.container3 {
+  padding: 10px;
+  background-color: coral;
+}
+.container4 {
+  padding: 10px;
+  background-color: yellow;
+}
+.container5 {
+  padding: 10px;
+  background-color: green;
+}
+.container6 {
+  padding: 10px;
+  background-color: blueviolet;
+} */
+
+/* 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 10fr;
+  grid-gap: 5px;
+}
+
+.header {
+  padding: 10px;
+  background-color: red;
+  /* grid-column-start: 1;
+    grid-column-end: 3;
+  grid-column: 2 / 3;
+}
+
+.menu {
+  padding: 10px;
+  background-color: cornflowerblue;
+  grid-row: 1 / 3;
+}
+.content {
+  padding: 10px;
+  background-color: greenyellow;
+
+    /* Malumotlarni joyidan jildirish uchun */
+/* justify-self: center;
+    align-self: center;
+}
+
+.footer {
+  padding: 10px;
+  background-color: blanchedalmond;
+  /* grid-column-start: 1;
+    grid-column-end: 3; 
+  grid-column: 1 / 3;
+}
+ */
+
+
+ /* Grid ishlatishning eng zo'r usuli */
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows: 1fr 10fr;
+  grid-template-areas: 
+  "m h h h h"
+  "m c c c c"
+  "f f f f f";
+  /* Harflar o'rniga nuqta qo'yish bo'sh joy tashlashni bildiradi */
+}
+
+.header {
+  padding: 10px;
+  background-color: red;
+  grid-area: h;
+}
+
+.menu {
+  padding: 10px;
+  background-color: cornflowerblue;
+  grid-row: 1 / 3;
+  grid-area: m;
+}
+.content {
+  padding: 10px;
+  background-color: greenyellow;
+  grid-area: c;
+}
+
+.footer {
+  padding: 10px;
+  background-color: blanchedalmond;
+  grid-area: f;
+}

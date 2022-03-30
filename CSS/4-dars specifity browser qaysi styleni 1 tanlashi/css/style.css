@@ -1,0 +1,35 @@
+/* Cascading  -> bu nima degani desak bitta elementga bir nechta uslublar bersak u faqat bittasini tanlab olishiga cascading deyiladi */
+
+/* Bu uslublarni biz quyidagicha tariflashimiz mumkin 
+browser stillarni quyidagi uslubda tanlab oladi 
+1-o'rinda -> inline cssni oladi 
+2-o'rinda -> ID ni oladi bu id inline css dan keyingi o'rinda turadi
+3-o'rinda -> CLASS va atributni oladi bu class id dan keyingi orinda turadi 
+4-o'rinda -> Tagni oladi bu tag class va atributdan keyingi o'rinda turadi */
+
+/*  Shu tanlab olishiga cascading stylesheet deyiladi */
+
+
+/* ID inlinedan keyingi orinda turadi */
+#heading1 {
+    color: red;
+}
+
+/* Class ID dan keyingi o'rinda turadi */
+.heading {
+    font-family: sans-serif;
+    font-size: 24px;
+    color: blue;
+}
+
+
+/* Atribut classdan keyingi o'rinda turadi */
+[disabled] {
+    color: lawngreen;
+}
+
+/* Tag atributdan keyingi orinda turadi */
+h1 {
+    font-size: 48px;
+    color: green;
+}

@@ -1,0 +1,51 @@
+// O'zgaruvchilarni e'lon qilish
+$border-color: #c6538c;
+$border-type: solid;
+
+.alert {
+  border: 1px $border-type $border-color;
+}
+
+// Global o'zgaruvchilar bular kodimizning eng tepasida yozgan sass kodimiz global bo'ladi.
+
+// Local o'zgaruvchilar bular scope yani qavslarni ichida yoziladi.
+// $global-variable: global value;
+
+// .content {
+//   $local-variable: local value;
+//   global: $global-variable;
+//   local: $local-variable;
+// }
+
+// .sidebar {
+//   global: $global-variable;
+// }
+
+// Quyidagi kod ishlamaydi, chunki $local-variable bu yerda ko'rinmaydi:
+// Local: $local-variable;
+
+$primary-color: red;
+
+.section-1 {
+  $secondary-color: green;
+  color: $primary-color;
+  background-color: $secondary-color;
+}
+
+.section-2 {
+  border: 1px solid $primary-color;
+  color: $primary-color;
+}
+
+// Shadowing uchun misol bu o'zi moslab beradi yani blockni ichidagi o'zgaruvchilarni o'zi local qilib beradi.Blockni tashqarisidagini esa global qilib beradi.
+
+$variable: global value;
+
+.content {
+  $variable: local value;
+  value: $variable;
+}
+
+.sidebar {
+  value: $variable;
+}

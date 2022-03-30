@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.clr {
+    clear: both;
+}
+
+/* Main section */
+
+#main__section {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/background.jpg);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.logo {
+    color: #fff;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.main-navigation__items {
+    float: right;
+    padding-top: 20px;
+}
+
+.main-navigation__item {
+    display: inline;
+    padding: 10px;
+}
+
+.main-navigation__item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* banner section */
+
+
+
+.banner {
+    padding-top: 4.37rem;
+    line-height: 3.5rem;
+    font-family: sans-serif;
+    font-size: 1.35rem;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-section__info {
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.btn {
+    padding: 15px;
+    border-radius: 30px;
+    width: 150px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #95a5ab;
+}
+
+
+/* Showcase banner */
+
+.showcase__banner {
+    background-color: #ebeced;
+    height: 60vh;
+    line-height: 25px;
+}
+
+.left img {
+  margin-top: 20px;
+   height: 530px;
+  float: left;
+}
+
+
+.right h1 {
+    padding-top: 3rem;
+    padding-bottom: 20px;
+}
+
+
+.right .btn-dark {
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.right .btn-dark:hover {
+    background-color: #fff;
+    color: black;
+    transition: all 0.5s ease-out;
+}
+
+.footer__section {
+    text-align: center;
+    
+}
+
+.footer__section .footer__title {
+    padding-top: 50px;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.footer__section p {
+    font-size: 25px;
+}
+
+
+.services__section {
+line-height: 30px;
+}
+
+.services__section .box-1 {
+    float: left;
+    padding-top: 100px;
+    width: 28%;
+    margin-right: 50px;
+}
+
+
+.services__section .box-2 {
+    float: left;
+    padding-top: 100px;
+    width: 28%;
+    margin-right: 50px;
+}
+
+.services__section .box-3 {
+    float: left;
+   width: 28%;
+   padding-top: 100px;
+   margin-right: 50px;
+}
+
+.services__section .box-4 {
+    float: left;
+    padding-top: 200px;
+    width: 28%;
+    margin-right: 50px;
+}
+
+
+.services__section .box-5 {
+    float: left;
+    padding-top: 200px;
+    width: 28%;
+    margin-right: 50px;
+}
+
+.services__section .box-6 {
+    float: left;
+   width: 28%;
+   padding-top: 200px;
+   margin-right: 50px;
+}
